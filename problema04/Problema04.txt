@@ -1,0 +1,51 @@
+//Generar una solución que permita ingresar jugadores de fútbol; 
+//por cada jugador se debe solicitar:
+//Nombre el jugador
+//Posición en el campo de juego
+//Edad
+//Estatura
+
+1. Inicio
+2. nombreJugador, x(100)[{A-Z}, {a-z}, {BS}]
+3. posicion, x(n)[{A-Z}, {a-z}, {BS}]
+4. edad, i[0, n]
+5. estatura, d[0, n]
+6. bandera, x(n)[{A-Z}, {a-z}]
+7. contador, i[0, n] <-- 0
+8. promedioEdades, d[0, n]
+9. promedioEstaturas, d[0, n]
+10. sumaEdades, d[0, n] <-- 0
+11. sumaEstatura, d[0, n] <-- 0
+11. cadena, x(n)[{0-n},{a,z}, {A,Z}, {-, BS}] <-- ""
+12. cadena2, x(n)[{0-n},{a,z}, {A,Z}, {-, BS}] <-- ""
+13. condicion, x(n)[{A-Z}, {a-z}, {BS}]
+10. Haga_Hasta
+
+11. 	Escribir "Ingrese el nombre del jugador"
+12.	leer nombreJugador
+
+13.	Escribir "Ingrese la posicion del jugador"
+14.	leer posicion
+
+15.	Escribir "Ingrese la edad del jugador"
+16.	leer edad	
+
+17.	Escribir "Ingrese la estatura del jugador"
+18.	leer estatura
+
+19.	sumaEdades <-- sumaEdades + edad 
+20.	sumaEstatura <-- sumaEstatura + estatura
+21.	contador <-- contador + 1
+22.	promedioEdades <-- sumaEdades/contador
+23.	promedioEstatura <-- sumaEstatura/contador 
+
+24.	cadena <-- cadena + nombreJugador + "-" + posicion + "-," + "edad" + edad + ", " + "estatura" + estatura + "\n"
+25.	Escribir "Ingrese "si" para salir del ciclo"
+26.	leer condicion
+
+25. Fin_Haga_Hasta condicion <-- "si"
+
+25. cadena2 <-- cadena + "Promedio edades: " + promedioEdades + " Promedio estaturas: " + promedioEstatura
+26. Escribir cadena2
+
+27. Fin
